@@ -1,0 +1,42 @@
+# Método 48h - Robots.txt
+User-agent: *
+Allow: /
+Allow: /js/
+Allow: /images/
+Allow: /css/
+
+# Páginas principais
+Allow: /index.html
+Allow: /terms-of-use.html
+Allow: /privacy-policy.html
+Allow: /cookie-policy.html
+Allow: /legal-notice.html
+Allow: /contact.html
+
+# Sitemap
+Sitemap: /sitemap.xml
+
+# Desallow admin areas
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /my-account/
+
+# Crawl delay
+Crawl-delay: 10
+
+# Bots específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: / 

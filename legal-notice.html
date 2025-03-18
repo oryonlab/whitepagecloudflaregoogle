@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Notice | 48 Hours Method</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css_wp/styles.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .legal-content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        h1 {
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .footer-link {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+        .footer-link:hover {
+            color: #ff6b6b;
+        }
+        .footer-disclaimer {
+            text-align: center;
+            color: #666;
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <div class="legal-content">
+            <h1 class="text-3xl font-bold mb-6">Legal Notice</h1>
+            <div class="space-y-4 text-gray-300">
+                <p>Last updated: <span id="currentDate"></span></p>
+
+                <!-- Individual Results Section -->
+                <div class="mt-6">
+                    <h2 class="text-xl font-semibold">Individual Results</h2>
+                    <p class="mt-2">The results obtained from using the 48 Hours Method may vary from person to person. The testimonials and examples used are exceptional results, which do not apply to the average purchaser, and are not intended to represent or guarantee that anyone will achieve the same or similar results.</p>
+                </div>
+
+                <!-- Medical Consultation Section -->
+                <div class="mt-6">
+                    <h2 class="text-xl font-semibold">Medical Consultation</h2>
+                    <p class="mt-2">The information provided by the 48 Hours Method is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition or before starting any new health regimen.</p>
+                </div>
+
+                <!-- Responsibility Section -->
+                <div class="mt-6">
+                    <h2 class="text-xl font-semibold">Responsibility</h2>
+                    <p class="mt-2">By using the 48 Hours Method, you acknowledge that you are responsible for your own health and decisions. The creators and distributors of this method are not liable for any health problems that may result from applying the techniques, advice, and recommendations presented in this program.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-grow"></div>
+
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="footer-links">
+                <a href="./terms-of-use.html" class="footer-link">Terms of Use</a>
+                <a href="./privacy-policy.html" class="footer-link">Privacy Policy</a>
+                <a href="./cookie-policy.html" class="footer-link">Cookie Policy</a>
+                <a href="./legal-notice.html" class="footer-link">Legal Notice</a>
+                <a href="./contact.html" class="footer-link">Contact</a>
+                <a href="./index.html" class="footer-link">Home</a>
+            </div>
+            <div class="footer-disclaimer">
+                <p>This site is not affiliated with Facebook, Google or any of their entities. After you leave Facebook or Google, the responsibility is not theirs but our site's. We make every effort to clearly indicate and show all product evidence and use real results. We do not sell your email or any information to third parties. We never do any kind of spam. If you have any questions, feel free to use the contact link to talk to us.</p>
+                <p class="mt-4">© 2023 The 48 Hours Method. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentDate = new Date().toLocaleDateString('en-US');
+            document.getElementById('currentDate').textContent = currentDate;
+        });
+    </script>
+</body>
+</html> 

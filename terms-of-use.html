@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use | 48 Hours Method</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css_wp/styles.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .main-content {
+            flex: 1 0 auto;
+        }
+        .footer {
+            flex-shrink: 0;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .footer-link {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+        .footer-link:hover {
+            color: #ff6b6b;
+        }
+        .footer-disclaimer {
+            text-align: center;
+            color: #666;
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .legal-content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        h1 {
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container mx-auto px-4 py-8">
+            <div class="legal-content">
+                <h1 class="text-3xl font-bold mb-6">Terms of Use</h1>
+                <div class="space-y-4 text-gray-300">
+                    <p>Last updated: <span id="currentDate"></span></p>
+                    
+                    <!-- Acceptance Section -->
+                    <div class="mt-6">
+                        <h2 class="text-xl font-semibold">Acceptance of Terms</h2>
+                        <p class="mt-2">By accessing or using the 48 Hours Method website, you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.</p>
+                    </div>
+                    
+                    <!-- Content Usage Section -->
+                    <div class="mt-6">
+                        <h2 class="text-xl font-semibold">Use of Content</h2>
+                        <p class="mt-2">The content of the 48 Hours Method website is for your general information and use only. It is subject to change without notice. The program and its contents are intended to be used as instructed. Any modification or adaptation of the program is not recommended and may lead to different results than advertised.</p>
+                    </div>
+                    
+                    <!-- Responsibility Section -->
+                    <div class="mt-6">
+                        <h2 class="text-xl font-semibold">User Responsibility</h2>
+                        <p class="mt-2">You are responsible for ensuring that your use of the 48 Hours Method is in accordance with applicable law. You are also responsible for taking all necessary precautions to ensure that any content you may obtain from the website is free of viruses or other harmful components.</p>
+                    </div>
+                    
+                    <!-- Intellectual Property Section -->
+                    <div class="mt-6">
+                        <h2 class="text-xl font-semibold">Intellectual Property</h2>
+                        <p class="mt-2">All content included on this website, such as text, graphics, logos, images, as well as the compilation thereof, and any software used on the website, is the property of the 48 Hours Method or its suppliers and protected by copyright and intellectual property laws.</p>
+                    </div>
+
+                    <div id="companyInfo" class="mt-8 text-sm text-gray-400"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="footer-links">
+                <a href="./terms-of-use.html" class="footer-link">Terms of Use</a>
+                <a href="./privacy-policy.html" class="footer-link">Privacy Policy</a>
+                <a href="./cookie-policy.html" class="footer-link">Cookie Policy</a>
+                <a href="./legal-notice.html" class="footer-link">Legal Notice</a>
+                <a href="./contact.html" class="footer-link">Contact</a>
+                <a href="./index.html" class="footer-link">Home</a>
+            </div>
+            <div class="footer-disclaimer">
+                <p>This site is not affiliated with Facebook, Google or any of their entities. After you leave Facebook or Google, the responsibility is not theirs but our site's. We make every effort to clearly indicate and show all product evidence and use real results. We do not sell your email or any information to third parties. We never do any kind of spam. If you have any questions, feel free to use the contact link to talk to us.</p>
+                <p class="mt-4">© 2023 The 48 Hours Method. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentDate = new Date().toLocaleDateString('en-US');
+            document.getElementById('currentDate').textContent = currentDate;
+        });
+    </script>
+</body>
+</html> 
